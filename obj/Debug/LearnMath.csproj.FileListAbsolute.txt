@@ -31,3 +31,12 @@ C:\Users\shlomo.DESKTOP-UAUDQDV\Documents\Visual Studio 2013\Projects\LearnMath\
 C:\Users\shlomo.DESKTOP-UAUDQDV\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.NumbersSequence.resources
 C:\Users\shlomo.DESKTOP-UAUDQDV\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.AddRemove.resources
 C:\Users\shlomo.DESKTOP-UAUDQDV\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.Counting.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.AddRemove.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.AddStudent.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.AddTeacher.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.Counting.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.LearnDigit.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.MatchDigitToCount.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.MemoryGame.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.NumbersSequence.resources
+C:\Users\Tsahi\documents\visual studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.ShowProgres.resources
