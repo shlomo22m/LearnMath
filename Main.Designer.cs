@@ -48,7 +48,7 @@
             this.EntranceTitle.Location = new System.Drawing.Point(254, 27);
             this.EntranceTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.EntranceTitle.Name = "EntranceTitle";
-            this.EntranceTitle.Size = new System.Drawing.Size(598, 79);
+            this.EntranceTitle.Size = new System.Drawing.Size(566, 74);
             this.EntranceTitle.TabIndex = 0;
             this.EntranceTitle.Text = "לומדים חשבון ונהנים";
             this.EntranceTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -74,7 +74,7 @@
             this.TeacherEntrance.AutoSize = true;
             this.TeacherEntrance.Font = new System.Drawing.Font("Arial Narrow", 25.8F, System.Drawing.FontStyle.Bold);
             this.TeacherEntrance.ForeColor = System.Drawing.Color.Coral;
-            this.TeacherEntrance.Location = new System.Drawing.Point(45, 283);
+            this.TeacherEntrance.Location = new System.Drawing.Point(15, 14);
             this.TeacherEntrance.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.TeacherEntrance.Name = "TeacherEntrance";
             this.TeacherEntrance.Size = new System.Drawing.Size(249, 119);
@@ -101,7 +101,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(734, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 29);
+            this.label1.Size = new System.Drawing.Size(109, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = ":שם משתמש";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -111,7 +111,7 @@
             this.UserName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UserName.Location = new System.Drawing.Point(560, 167);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(154, 34);
+            this.UserName.Size = new System.Drawing.Size(154, 28);
             this.UserName.TabIndex = 5;
             // 
             // Password
@@ -119,7 +119,7 @@
             this.Password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Password.Location = new System.Drawing.Point(240, 167);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(177, 34);
+            this.Password.Size = new System.Drawing.Size(177, 28);
             this.Password.TabIndex = 7;
             // 
             // label2
@@ -128,7 +128,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(423, 172);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 29);
+            this.label2.Size = new System.Drawing.Size(71, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = ":סיסמא";
             // 
@@ -149,7 +149,7 @@
             // 
             // StartPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightSlateGray;
