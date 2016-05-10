@@ -53,9 +53,7 @@ namespace LearnMath
 
         private void blackBackground_CheckedChanged(object sender, EventArgs e)
         {
-            s1.BackColor = Color.Black;
-            this.BackColor = Color.Black;
-            Console.ForegroundColor = ConsoleColor.White;
+          
             
             
         }
@@ -65,6 +63,17 @@ namespace LearnMath
             this.Hide();
             ShowProgres S2 = new ShowProgres();
             S2.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MultiCollor_CheckedChanged(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

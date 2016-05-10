@@ -51,7 +51,6 @@ C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Deb
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.AddTeacher.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.Counting.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.EditStudent.resources
-C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.StartPage.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.LearnDigit.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.MatchDigitToCount.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.MemoryGame.resources
@@ -61,3 +60,4 @@ C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Deb
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.StudentForm.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.TeacherForm.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.csproj.GenerateResource.Cache
+C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.StartPage.resources

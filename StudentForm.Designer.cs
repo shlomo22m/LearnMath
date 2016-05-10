@@ -46,115 +46,140 @@
             this.Games.AutoSize = true;
             this.Games.Font = new System.Drawing.Font("Aharoni", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Games.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Games.Location = new System.Drawing.Point(506, -11);
+            this.Games.Location = new System.Drawing.Point(380, -9);
+            this.Games.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Games.Name = "Games";
-            this.Games.Size = new System.Drawing.Size(269, 79);
+            this.Games.Size = new System.Drawing.Size(250, 74);
             this.Games.TabIndex = 0;
             this.Games.Text = "משחקים";
             // 
             // KnowNumbers
             // 
             this.KnowNumbers.AutoSize = true;
-            this.KnowNumbers.ForeColor = System.Drawing.Color.SeaGreen;
-            this.KnowNumbers.Location = new System.Drawing.Point(838, 15);
+            this.KnowNumbers.BackColor = System.Drawing.Color.SkyBlue;
+            this.KnowNumbers.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.KnowNumbers.ForeColor = System.Drawing.Color.Black;
+            this.KnowNumbers.Location = new System.Drawing.Point(628, 12);
+            this.KnowNumbers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.KnowNumbers.Name = "KnowNumbers";
-            this.KnowNumbers.Size = new System.Drawing.Size(350, 200);
+            this.KnowNumbers.Size = new System.Drawing.Size(262, 162);
             this.KnowNumbers.TabIndex = 1;
             this.KnowNumbers.Text = "הכרת הספרות";
-            this.KnowNumbers.UseVisualStyleBackColor = true;
+            this.KnowNumbers.UseVisualStyleBackColor = false;
             this.KnowNumbers.Click += new System.EventHandler(this.KnowNumbers_Click);
             // 
             // CountNumbers
             // 
-            this.CountNumbers.ForeColor = System.Drawing.Color.SeaGreen;
-            this.CountNumbers.Location = new System.Drawing.Point(442, 15);
+            this.CountNumbers.BackColor = System.Drawing.Color.SkyBlue;
+            this.CountNumbers.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
+            this.CountNumbers.ForeColor = System.Drawing.Color.Black;
+            this.CountNumbers.Location = new System.Drawing.Point(332, 12);
+            this.CountNumbers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CountNumbers.Name = "CountNumbers";
-            this.CountNumbers.Size = new System.Drawing.Size(350, 200);
+            this.CountNumbers.Size = new System.Drawing.Size(262, 162);
             this.CountNumbers.TabIndex = 2;
             this.CountNumbers.Text = "מנייה";
-            this.CountNumbers.UseVisualStyleBackColor = true;
+            this.CountNumbers.UseVisualStyleBackColor = false;
             this.CountNumbers.Click += new System.EventHandler(this.CountNumbers_Click);
             // 
             // MatchNumbers
             // 
-            this.MatchNumbers.ForeColor = System.Drawing.Color.SeaGreen;
-            this.MatchNumbers.Location = new System.Drawing.Point(66, 15);
+            this.MatchNumbers.BackColor = System.Drawing.Color.SkyBlue;
+            this.MatchNumbers.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
+            this.MatchNumbers.ForeColor = System.Drawing.Color.Black;
+            this.MatchNumbers.Location = new System.Drawing.Point(50, 12);
+            this.MatchNumbers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MatchNumbers.Name = "MatchNumbers";
-            this.MatchNumbers.Size = new System.Drawing.Size(350, 200);
+            this.MatchNumbers.Size = new System.Drawing.Size(262, 162);
             this.MatchNumbers.TabIndex = 3;
             this.MatchNumbers.Text = "התאמת ספרה לכמות";
-            this.MatchNumbers.UseVisualStyleBackColor = true;
+            this.MatchNumbers.UseVisualStyleBackColor = false;
             this.MatchNumbers.Click += new System.EventHandler(this.MatchNumbers_Click);
             // 
             // SequenceNumbers
             // 
-            this.SequenceNumbers.ForeColor = System.Drawing.Color.SeaGreen;
-            this.SequenceNumbers.Location = new System.Drawing.Point(838, 272);
+            this.SequenceNumbers.BackColor = System.Drawing.Color.SkyBlue;
+            this.SequenceNumbers.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
+            this.SequenceNumbers.ForeColor = System.Drawing.Color.Black;
+            this.SequenceNumbers.Location = new System.Drawing.Point(628, 221);
+            this.SequenceNumbers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SequenceNumbers.Name = "SequenceNumbers";
-            this.SequenceNumbers.Size = new System.Drawing.Size(350, 200);
+            this.SequenceNumbers.Size = new System.Drawing.Size(262, 162);
             this.SequenceNumbers.TabIndex = 4;
             this.SequenceNumbers.Text = "רצף מספרים";
-            this.SequenceNumbers.UseVisualStyleBackColor = true;
+            this.SequenceNumbers.UseVisualStyleBackColor = false;
             this.SequenceNumbers.Click += new System.EventHandler(this.SequenceNumbers_Click);
             // 
             // MemoryGame
             // 
-            this.MemoryGame.ForeColor = System.Drawing.Color.SeaGreen;
-            this.MemoryGame.Location = new System.Drawing.Point(442, 272);
+            this.MemoryGame.BackColor = System.Drawing.Color.SkyBlue;
+            this.MemoryGame.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
+            this.MemoryGame.ForeColor = System.Drawing.Color.Black;
+            this.MemoryGame.Location = new System.Drawing.Point(332, 221);
+            this.MemoryGame.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MemoryGame.Name = "MemoryGame";
-            this.MemoryGame.Size = new System.Drawing.Size(350, 200);
+            this.MemoryGame.Size = new System.Drawing.Size(262, 162);
             this.MemoryGame.TabIndex = 5;
             this.MemoryGame.Text = "משחק הזיכרון";
-            this.MemoryGame.UseVisualStyleBackColor = true;
+            this.MemoryGame.UseVisualStyleBackColor = false;
             this.MemoryGame.Click += new System.EventHandler(this.MemoryGame_Click);
             // 
             // AddSubNumbers
             // 
-            this.AddSubNumbers.ForeColor = System.Drawing.Color.SeaGreen;
-            this.AddSubNumbers.Location = new System.Drawing.Point(66, 272);
+            this.AddSubNumbers.BackColor = System.Drawing.Color.SkyBlue;
+            this.AddSubNumbers.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
+            this.AddSubNumbers.ForeColor = System.Drawing.Color.Black;
+            this.AddSubNumbers.Location = new System.Drawing.Point(50, 221);
+            this.AddSubNumbers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddSubNumbers.Name = "AddSubNumbers";
-            this.AddSubNumbers.Size = new System.Drawing.Size(350, 200);
+            this.AddSubNumbers.Size = new System.Drawing.Size(262, 162);
             this.AddSubNumbers.TabIndex = 6;
             this.AddSubNumbers.Text = "חיבור וחיסור";
-            this.AddSubNumbers.UseVisualStyleBackColor = true;
+            this.AddSubNumbers.UseVisualStyleBackColor = false;
             this.AddSubNumbers.Click += new System.EventHandler(this.AddSubNumbers_Click);
             // 
             // ExitGames
             // 
-            this.ExitGames.Location = new System.Drawing.Point(64, 32);
+            this.ExitGames.BackColor = System.Drawing.Color.DeepPink;
+            this.ExitGames.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.ExitGames.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ExitGames.Location = new System.Drawing.Point(50, 442);
+            this.ExitGames.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ExitGames.Name = "ExitGames";
-            this.ExitGames.Size = new System.Drawing.Size(75, 23);
+            this.ExitGames.Size = new System.Drawing.Size(113, 49);
             this.ExitGames.TabIndex = 7;
-            this.ExitGames.Text = "יציאה";
-            this.ExitGames.UseVisualStyleBackColor = true;
+            this.ExitGames.Text = "חזרה";
+            this.ExitGames.UseVisualStyleBackColor = false;
             this.ExitGames.Click += new System.EventHandler(this.ExitGames_Click);
             // 
             // GamesPanel
             // 
             this.GamesPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GamesPanel.AutoSize = true;
+            this.GamesPanel.BackColor = System.Drawing.Color.White;
             this.GamesPanel.Controls.Add(this.SequenceNumbers);
+            this.GamesPanel.Controls.Add(this.ExitGames);
             this.GamesPanel.Controls.Add(this.MemoryGame);
             this.GamesPanel.Controls.Add(this.MatchNumbers);
             this.GamesPanel.Controls.Add(this.AddSubNumbers);
             this.GamesPanel.Controls.Add(this.CountNumbers);
             this.GamesPanel.Controls.Add(this.KnowNumbers);
             this.GamesPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.GamesPanel.Location = new System.Drawing.Point(50, 136);
+            this.GamesPanel.Location = new System.Drawing.Point(38, 110);
+            this.GamesPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GamesPanel.Name = "GamesPanel";
-            this.GamesPanel.Size = new System.Drawing.Size(1276, 990);
+            this.GamesPanel.Size = new System.Drawing.Size(957, 804);
             this.GamesPanel.TabIndex = 8;
             // 
             // StudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(1392, 753);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1044, 612);
             this.Controls.Add(this.GamesPanel);
-            this.Controls.Add(this.ExitGames);
             this.Controls.Add(this.Games);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StudentForm";
             this.Text = "StudentForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

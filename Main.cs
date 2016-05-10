@@ -69,5 +69,10 @@ namespace LearnMath
             EditStudent e1=new EditStudent();
             e1.ShowDialog();
         }
+
+        private void Excit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
