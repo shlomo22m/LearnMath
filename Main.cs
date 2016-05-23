@@ -7,15 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LearnMath
 {
     public partial class StartPage : Form
     {
-        
+        public static string connectionstr = "";
+        string connetionString = null;
+        string sql = null;
+        SqlCommand command;
+        SqlConnection connection;
+        SqlDataReader dataReader;      
         public StartPage()
         {
-            InitializeComponent();
+           InitializeComponent();
+           connectionstr = "Data Source=192.168.1.9;Initial Catalog=LearnMath;User ID=ilmwriter;Password=ilmwriter";
+           
+           connetionString = connectionstr;
+           connection = new SqlConnection(connetionString);
+
+         
         }
 
         private void StartPage_Load(object sender, EventArgs e)
@@ -42,17 +54,70 @@ namespace LearnMath
 
         private void StudentEntrance_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StudentForm st=new StudentForm();
-            st.ShowDialog();
+            string username = null;
+            string pasword = null;
+            int userType = 0;
+            connection.Open();
+            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "'";
+    //       sql = "SELECT UserId,Password  FROM ILMApp.dbo.LearnMath";
+
+           command = new SqlCommand(sql, connection);
+
+           SqlDataAdapter da = new SqlDataAdapter(command);
+
+           dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                userType = (int)dataReader.GetValue(0);
+            }
+
+            if (!(dataReader.HasRows) || userType!=1)
+            {
+                MessageBox.Show("שם משתמש או סיסמא אינם נכונים");
+            }
+            else
+            {
+                this.Hide();
+                StudentForm st = new StudentForm();
+                st.ShowDialog();
+            }
+            connection.Close();
         }
 
         private void TeacherEntrance_Click(object sender, EventArgs e)
         {
-           
-            this.Hide();
-            TeacherForm T1= new TeacherForm();
-            T1.ShowDialog();
+            
+            string username = null;
+            string pasword = null;
+            int userType = 0;
+            connection.Open();
+            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "'";
+            //       sql = "SELECT UserId,Password  FROM ILMApp.dbo.LearnMath";
+
+            command = new SqlCommand(sql, connection);
+
+            SqlDataAdapter da = new SqlDataAdapter(command);
+
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                userType = (int)dataReader.GetValue(0);
+            }
+
+            if (!(dataReader.HasRows) || userType != 0)
+            {
+                MessageBox.Show("שם משתמש או סיסמא אינם נכונים");
+            }
+            else
+            {
+                int i = 1;
+                this.Hide();
+                MenegerAndTeacherForm T1 = new MenegerAndTeacherForm(i);
+
+                T1.ShowDialog();
+
+            }
+            connection.Close();
          
                       
         }
@@ -65,9 +130,41 @@ namespace LearnMath
 
         private void MannagerEntrance_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            EditStudent e1=new EditStudent();
-            e1.ShowDialog();
+            
+
+          
+
+            string username = null;
+            string pasword = null;
+            int userType = 0;
+            connection.Open();
+            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "'";
+            //       sql = "SELECT UserId,Password  FROM ILMApp.dbo.LearnMath";
+
+            command = new SqlCommand(sql, connection);
+
+            SqlDataAdapter da = new SqlDataAdapter(command);
+
+            dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                userType = (int)dataReader.GetValue(0);
+            }
+
+            if (!(dataReader.HasRows) || userType != 2)
+            {
+                MessageBox.Show("שם משתמש או סיסמא אינם נכונים");
+            }
+            else
+            {
+                int i = 0;
+                this.Hide();
+                MenegerAndTeacherForm T1 = new MenegerAndTeacherForm(i);
+
+                T1.ShowDialog();
+
+            }
+            connection.Close();
         }
 
         private void Excit_Click(object sender, EventArgs e)
