@@ -54,11 +54,11 @@ namespace LearnMath
 
         private void StudentEntrance_Click(object sender, EventArgs e)
         {
-            string username = null;
+         
             string pasword = null;
-            int userType = 0;
+            int userType = 1;
             connection.Open();
-            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "'";
+            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "' and UserType= '1' ";
     //       sql = "SELECT UserId,Password  FROM ILMApp.dbo.LearnMath";
 
            command = new SqlCommand(sql, connection);
@@ -66,10 +66,11 @@ namespace LearnMath
            SqlDataAdapter da = new SqlDataAdapter(command);
 
            dataReader = command.ExecuteReader();
-            while (dataReader.Read())
-            {
-                userType = (int)dataReader.GetValue(0);
-            }
+
+            //while (dataReader.Read())
+            //{
+            //    userType = (int)dataReader.GetValue(0);
+            //}
 
             if (!(dataReader.HasRows) || userType!=1)
             {
@@ -86,12 +87,12 @@ namespace LearnMath
 
         private void TeacherEntrance_Click(object sender, EventArgs e)
         {
-            
-            string username = null;
+
+          
             string pasword = null;
             int userType = 0;
             connection.Open();
-            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "'";
+            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "' and UserType= '0'";
             //       sql = "SELECT UserId,Password  FROM ILMApp.dbo.LearnMath";
 
             command = new SqlCommand(sql, connection);
@@ -99,10 +100,10 @@ namespace LearnMath
             SqlDataAdapter da = new SqlDataAdapter(command);
 
             dataReader = command.ExecuteReader();
-            while (dataReader.Read())
-            {
-                userType = (int)dataReader.GetValue(0);
-            }
+            //while (dataReader.Read())
+            //{
+            //    userType = (int)dataReader.GetValue(0);
+            //}
 
             if (!(dataReader.HasRows) || userType != 0)
             {
@@ -132,13 +133,11 @@ namespace LearnMath
         {
             
 
-          
-
             string username = null;
             string pasword = null;
-            int userType = 0;
+            int userType = 2;
             connection.Open();
-            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "'";
+            sql = "SELECT UserType,UserId,Pasword  FROM LearnMath.dbo.[User] where UserId= '" + UserName.Text + "' and Pasword= '" + Password.Text + "' and UserType= '2'";
             //       sql = "SELECT UserId,Password  FROM ILMApp.dbo.LearnMath";
 
             command = new SqlCommand(sql, connection);
@@ -146,10 +145,10 @@ namespace LearnMath
             SqlDataAdapter da = new SqlDataAdapter(command);
 
             dataReader = command.ExecuteReader();
-            while (dataReader.Read())
-            {
-                userType = (int)dataReader.GetValue(0);
-            }
+            //while (dataReader.Read())
+            //{
+            //    userType = (int)dataReader.GetValue(0);
+            //}
 
             if (!(dataReader.HasRows) || userType != 2)
             {
@@ -170,6 +169,8 @@ namespace LearnMath
         private void Excit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+          
+            
         }
     }
 }

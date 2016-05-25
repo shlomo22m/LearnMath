@@ -44,35 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddRemove.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddRemove.designer.cs">
-      <DependentUpon>AddRemove.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddStudent.Designer.cs">
-      <DependentUpon>AddStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddTeacher.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddTeacher.Designer.cs">
-      <DependentUpon>AddTeacher.cs</DependentUpon>
-    </Compile>
     <Compile Include="Counting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Counting.designer.cs">
       <DependentUpon>Counting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EditStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditStudent.Designer.cs">
-      <DependentUpon>EditStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -130,20 +106,8 @@
     <Compile Include="UserGmaneUpdate.Designer.cs">
       <DependentUpon>UserGmaneUpdate.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddRemove.resx">
-      <DependentUpon>AddRemove.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddStudent.resx">
-      <DependentUpon>AddStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddTeacher.resx">
-      <DependentUpon>AddTeacher.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Counting.resx">
       <DependentUpon>Counting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditStudent.resx">
-      <DependentUpon>EditStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

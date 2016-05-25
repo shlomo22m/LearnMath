@@ -136,7 +136,7 @@
             this.AddSubNumbers.TabIndex = 6;
             this.AddSubNumbers.Text = "חיבור וחיסור";
             this.AddSubNumbers.UseVisualStyleBackColor = false;
-            this.AddSubNumbers.Click += new System.EventHandler(this.AddSubNumbers_Click);
+      
             // 
             // ExitGames
             // 

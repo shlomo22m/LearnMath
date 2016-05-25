@@ -64,11 +64,6 @@ namespace LearnMath
             G1.ShowDialog();
         }
 
-        private void AddSubNumbers_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AddRemove A1 = new AddRemove();
-            A1.ShowDialog();
-        }
+      
     }
 }
