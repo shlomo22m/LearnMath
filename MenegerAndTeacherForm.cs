@@ -16,7 +16,7 @@ namespace LearnMath
     public partial class MenegerAndTeacherForm : Form
     {
         public static string connectionstr = "";
-
+        public static int StudentUserId = 0;
         string connetionString = null;
         string sql = null;
         SqlCommand command;
@@ -117,15 +117,25 @@ namespace LearnMath
                 textBox13.Clear();
                 textBox14.Clear();
                 MessageBox.Show("נמחקו פרטי תלמיד");
+                connection.Close();
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int studentId = int.Parse(textBox3.Text); 
-            this.Hide();
-            UserGmaneUpdate UserGmaneUpdate = new UserGmaneUpdate();
-            UserGmaneUpdate.Show();
+            
+            if (textBox3.Text == "")
+            {
+                MessageBox.Show("אנא בחר תלמיד");
+            }
+            else
+            {
+                      int studentId = int.Parse(textBox3.Text); 
+                    this.Hide();
+                    UserGmaneUpdate UserGmaneUpdate = new UserGmaneUpdate(StudentUserId);
+                    UserGmaneUpdate.Show();
+            }
+          
 
         }
 
@@ -158,6 +168,7 @@ namespace LearnMath
                         textBox2.Text = textBox1.Text;
                        textBox5.Text = dataReader.GetValue(3).ToString();
                        textBox3.Text= dataReader.GetValue(0).ToString();
+                       StudentUserId = int.Parse(textBox3.Text);
                        textBox4.Text=  dataReader.GetValue(4).ToString();
                        textBox14.Text = dataReader.GetValue(5).ToString();
                        textBox13.Text = dataReader.GetValue(3).ToString();

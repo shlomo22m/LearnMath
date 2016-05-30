@@ -12,9 +12,11 @@ namespace LearnMath
 {
     public partial class StudentForm : Form
     {
-        public StudentForm()
+        static public int UserID = 0;
+        public StudentForm(int UserName)
         {
             InitializeComponent();
+            UserID = UserName;
         }
 
         private void ExitGames_Click(object sender, EventArgs e)
@@ -32,7 +34,7 @@ namespace LearnMath
         private void KnowNumbers_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LearnDigit L1= new LearnDigit();
+            LearnDigit L1 = new LearnDigit(UserID);
             L1.ShowDialog();
         }
 

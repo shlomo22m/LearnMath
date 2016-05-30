@@ -16,5 +16,17 @@ namespace LearnMath
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StudentForm form1 = new StudentForm(-1);
+            form1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

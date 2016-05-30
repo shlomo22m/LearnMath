@@ -79,7 +79,7 @@ namespace LearnMath
             else
             {
                 this.Hide();
-                StudentForm st = new StudentForm();
+                StudentForm st = new StudentForm(int.Parse(UserName.Text));
                 st.ShowDialog();
             }
             connection.Close();
@@ -171,6 +171,11 @@ namespace LearnMath
             Application.Exit();
           
             
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

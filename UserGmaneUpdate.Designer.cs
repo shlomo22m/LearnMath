@@ -30,11 +30,8 @@
         {
             this.button2 = new System.Windows.Forms.Button();
             this.LevelPanel = new System.Windows.Forms.Panel();
-            this.CustomLevel = new System.Windows.Forms.RadioButton();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.HardLevel = new System.Windows.Forms.RadioButton();
             this.GameLevel = new System.Windows.Forms.Label();
-            this.EseyLevel = new System.Windows.Forms.RadioButton();
             this.ColorPanel = new System.Windows.Forms.Panel();
             this.blackBackground = new System.Windows.Forms.RadioButton();
             this.MultiCollor = new System.Windows.Forms.RadioButton();
@@ -44,6 +41,8 @@
             this.SmallMouse = new System.Windows.Forms.RadioButton();
             this.MouseSize = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.LevelPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.ColorPanel.SuspendLayout();
@@ -56,90 +55,46 @@
             this.button2.AutoSize = true;
             this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button2.Font = new System.Drawing.Font("Miriam", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button2.Location = new System.Drawing.Point(580, 208);
+            this.button2.Location = new System.Drawing.Point(582, 222);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 46);
             this.button2.TabIndex = 37;
             this.button2.Text = "עדכו משחק";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // LevelPanel
             // 
             this.LevelPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LevelPanel.AutoSize = true;
             this.LevelPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.LevelPanel.Controls.Add(this.CustomLevel);
             this.LevelPanel.Controls.Add(this.numericUpDown1);
-            this.LevelPanel.Controls.Add(this.HardLevel);
             this.LevelPanel.Controls.Add(this.GameLevel);
-            this.LevelPanel.Controls.Add(this.EseyLevel);
-            this.LevelPanel.Location = new System.Drawing.Point(29, 64);
+            this.LevelPanel.Location = new System.Drawing.Point(83, 64);
             this.LevelPanel.Margin = new System.Windows.Forms.Padding(2);
             this.LevelPanel.Name = "LevelPanel";
-            this.LevelPanel.Size = new System.Drawing.Size(254, 152);
+            this.LevelPanel.Size = new System.Drawing.Size(206, 126);
             this.LevelPanel.TabIndex = 36;
-            // 
-            // CustomLevel
-            // 
-            this.CustomLevel.AutoSize = true;
-            this.CustomLevel.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CustomLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.CustomLevel.Location = new System.Drawing.Point(102, 115);
-            this.CustomLevel.Margin = new System.Windows.Forms.Padding(2);
-            this.CustomLevel.Name = "CustomLevel";
-            this.CustomLevel.Size = new System.Drawing.Size(148, 24);
-            this.CustomLevel.TabIndex = 17;
-            this.CustomLevel.TabStop = true;
-            this.CustomLevel.Text = "התאמה אישית- עד";
-            this.CustomLevel.UseVisualStyleBackColor = true;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(31, 118);
+            this.numericUpDown1.Location = new System.Drawing.Point(105, 58);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(40, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(74, 20);
             this.numericUpDown1.TabIndex = 18;
-            // 
-            // HardLevel
-            // 
-            this.HardLevel.AutoSize = true;
-            this.HardLevel.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HardLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.HardLevel.Location = new System.Drawing.Point(114, 86);
-            this.HardLevel.Margin = new System.Windows.Forms.Padding(2);
-            this.HardLevel.Name = "HardLevel";
-            this.HardLevel.Size = new System.Drawing.Size(134, 24);
-            this.HardLevel.TabIndex = 16;
-            this.HardLevel.TabStop = true;
-            this.HardLevel.Text = "רמה קשה-עד 10";
-            this.HardLevel.UseVisualStyleBackColor = true;
             // 
             // GameLevel
             // 
             this.GameLevel.AutoSize = true;
             this.GameLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.GameLevel.Location = new System.Drawing.Point(82, 17);
+            this.GameLevel.Location = new System.Drawing.Point(47, 17);
             this.GameLevel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GameLevel.Name = "GameLevel";
             this.GameLevel.Size = new System.Drawing.Size(157, 24);
             this.GameLevel.TabIndex = 14;
             this.GameLevel.Text = "בחירת רמת משחק";
-            // 
-            // EseyLevel
-            // 
-            this.EseyLevel.AutoSize = true;
-            this.EseyLevel.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.EseyLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.EseyLevel.Location = new System.Drawing.Point(121, 58);
-            this.EseyLevel.Margin = new System.Windows.Forms.Padding(2);
-            this.EseyLevel.Name = "EseyLevel";
-            this.EseyLevel.Size = new System.Drawing.Size(127, 24);
-            this.EseyLevel.TabIndex = 15;
-            this.EseyLevel.TabStop = true;
-            this.EseyLevel.Text = "רמה קלה- עד 5";
-            this.EseyLevel.UseVisualStyleBackColor = true;
             // 
             // ColorPanel
             // 
@@ -258,11 +213,31 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.Location = new System.Drawing.Point(619, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 22);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "בחר משחק";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(482, 10);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 40;
+            // 
             // UserGmaneUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 335);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.LevelPanel);
@@ -270,6 +245,7 @@
             this.Controls.Add(this.MousePanel);
             this.Name = "UserGmaneUpdate";
             this.Text = "UserGmaneUpdate";
+            this.Load += new System.EventHandler(this.UserGmaneUpdate_Load);
             this.LevelPanel.ResumeLayout(false);
             this.LevelPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -286,11 +262,8 @@
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel LevelPanel;
-        private System.Windows.Forms.RadioButton CustomLevel;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.RadioButton HardLevel;
         private System.Windows.Forms.Label GameLevel;
-        private System.Windows.Forms.RadioButton EseyLevel;
         private System.Windows.Forms.Panel ColorPanel;
         private System.Windows.Forms.RadioButton blackBackground;
         private System.Windows.Forms.RadioButton MultiCollor;
@@ -300,5 +273,7 @@
         private System.Windows.Forms.RadioButton SmallMouse;
         private System.Windows.Forms.Label MouseSize;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
