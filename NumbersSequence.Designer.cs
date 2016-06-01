@@ -66,9 +66,10 @@
             this.ClientSize = new System.Drawing.Size(839, 418);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NumbersSequence";
             this.Text = "NumbersSequence";
+            this.Load += new System.EventHandler(this.NumbersSequence_Load);
             this.ResumeLayout(false);
 
         }

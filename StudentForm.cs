@@ -48,21 +48,21 @@ namespace LearnMath
         private void MatchNumbers_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MatchDigitToCount M1 = new MatchDigitToCount();
+            MatchDigitToCount M1 = new MatchDigitToCount(-1);
             M1.ShowDialog();
         }
 
         private void SequenceNumbers_Click(object sender, EventArgs e)
         {
             this.Hide();
-            NumbersSequence N1 = new NumbersSequence();
+            NumbersSequence N1 = new NumbersSequence(-1);
             N1.ShowDialog();
         }
 
         private void MemoryGame_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MemoryGame G1 = new MemoryGame();
+            MemoryGame G1 = new MemoryGame(-1);
             G1.ShowDialog();
         }
 

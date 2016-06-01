@@ -9,10 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace LearnMath
 {
     public partial class LearnDigit : Form
     {
+     
+        
         public static int UserId = 0;             
         public static string connectionstr = "";     
         string connetionString = null;
