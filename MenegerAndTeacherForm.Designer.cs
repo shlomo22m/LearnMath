@@ -69,7 +69,6 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
             this.ManagerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -501,21 +500,6 @@
             this.textBox14.Size = new System.Drawing.Size(139, 20);
             this.textBox14.TabIndex = 41;
             // 
-            // button9
-            // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button9.AutoSize = true;
-            this.button9.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button9.Font = new System.Drawing.Font("Miriam", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.button9.Location = new System.Drawing.Point(11, 11);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(183, 33);
-            this.button9.TabIndex = 42;
-            this.button9.Text = "הצגת דוח תלמיד";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // MenegerAndTeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -523,7 +507,6 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(821, 645);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox13);
@@ -601,6 +584,5 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button9;
     }
 }
