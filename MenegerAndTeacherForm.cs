@@ -343,5 +343,13 @@ namespace LearnMath
             }
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ShowProgres uga = new ShowProgres();
+            uga.Show(); 
+
+        }
+
     }
 }
