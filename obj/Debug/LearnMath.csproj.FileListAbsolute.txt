@@ -58,3 +58,4 @@ C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Deb
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.StartPage.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.UserGmaneUpdate.resources
 C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\obj\Debug\LearnMath.MenegerAndTeacherForm.resources
+C:\Users\felix\Documents\Visual Studio 2013\Projects\LearnMath\LearnMath\bin\Debug\itextsharp.dll

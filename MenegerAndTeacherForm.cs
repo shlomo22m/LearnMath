@@ -342,6 +342,13 @@ namespace LearnMath
                 MessageBox.Show("נמחקו פרטי מורה");
             }
         }
+          // student report
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ShowProgres s = new ShowProgres();
+            s.Show();
+        }
 
     }
 }
