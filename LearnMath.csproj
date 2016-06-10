@@ -54,11 +54,6 @@
     <Compile Include="Counting.designer.cs">
       <DependentUpon>Counting.cs</DependentUpon>
     </Compile>
-    <Compile Include="LearnMathDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LearnMathDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,17 +149,6 @@
     <EmbeddedResource Include="UserGmaneUpdate.resx">
       <DependentUpon>UserGmaneUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="LearnMathDataSet.xsc">
-      <DependentUpon>LearnMathDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LearnMathDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LearnMathDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LearnMathDataSet.xss">
-      <DependentUpon>LearnMathDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

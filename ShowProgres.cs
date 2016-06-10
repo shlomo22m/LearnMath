@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
@@ -6,7 +7,6 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
 using System;
-using System.Diagnostics;
 
 namespace LearnMath
 {
@@ -34,9 +34,6 @@ namespace LearnMath
             comboBox1.Items.Add("רצף מספרים");
             comboBox1.Items.Add("משחק הזיכרון");
             comboBox1.Items.Add("חיבור וחיסור");
-            fillClassCombox();
-            
-
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -103,8 +100,6 @@ namespace LearnMath
                 {
                     MessageBox.Show("תלמיד לא נמצא");
                     IdSerchTxt.Clear();
-                    comboBox1.ResetText();
-                    connection.Close();        
                 }
                 else
                 {
@@ -121,11 +116,8 @@ namespace LearnMath
                 Paragraph p1 = new Paragraph(totalGrade.ToString());
                 Doc.Add(p1);
                 Doc.Close();
-                Process op = new Process();
-                op.StartInfo.FileName = "C:/Users/felix/Desktop/repoetPerStudent.pdf";
-                op.Start();
-                totalGrade = 0;
-                comboBox1.ResetText();                                
+                OpenFileDialog op = new OpenFileDialog();
+                op.FileName = "C:/Users/felix/Desktop/repoetPerStudent.pdf";
               }
           }           
         }
@@ -152,63 +144,13 @@ namespace LearnMath
             }
             connection.Close();
             Doc.Close();
-            Process op = new Process();
-            op.StartInfo.FileName = "C:/Users/felix/Desktop/reportForAll.pdf";
-           
-            op.Start();
+            OpenFileDialog op = new OpenFileDialog();
+            op.FileName = "C:/Users/felix/Desktop/reportForAll.pdf";
         }
+
         private void ShowProgres_Load_1(object sender, EventArgs e)
         {
-         
-        }
-
-        // Pdf report per Class
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Document Doc = new Document();
-            PdfWriter.GetInstance(Doc, new FileStream("C:/Users/felix/Desktop/reportPerClass.pdf", FileMode.Create));
-            Doc.Open();
-            connection.Open();
-            string Class = comboBox2.SelectedItem.ToString();
-            sql = "SELECT UserID FROM LearnMath.dbo.[User] where Class= '" + Class + "'";
-            
-            command = new SqlCommand(sql, connection);
-            SqlDataAdapter da = new SqlDataAdapter(command);
-            dataReader = command.ExecuteReader();
-            while (dataReader.Read())
-            {                       
-                int Grade = int.Parse(dataReader.GetValue(0).ToString()); ;
-                Paragraph p1 = new Paragraph("User Id " + Grade + "  Total Grade " + Grade.ToString());
-                Doc.Add(p1);
-          
-            }
-            connection.Close();
-            Doc.Close();
-            Process op = new Process();
-            op.StartInfo.FileName = "C:/Users/felix/Desktop/reportPerClass.pdf";
-
-            op.Start();
-        }
-
-        private void fillClassCombox()
-        {
-            string Class = null;
-            connection.Open();
-            sql = "SELECT Class FROM LearnMath.dbo.[User]";
-            command = new SqlCommand(sql, connection);
-            SqlDataAdapter da = new SqlDataAdapter(command);
-            dataReader = command.ExecuteReader();          
-                
-
-            while (dataReader.Read())
-            {              
-             
-                Class = dataReader.GetValue(0).ToString();
-                comboBox2.Items.Add(Class);
-            }
-            connection.Close();
-    
-        }    
-
+        }     
+   
     }
 }
